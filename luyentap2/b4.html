@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>b4</title>
+</head>
+<body>
+<script>
+  function check(s) {
+    if (s === "") {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  function check2() {
+    let s = prompt("Nhập ký tự:");
+    let result;
+    if (check(s)) {
+      result = "true";
+    } else {
+      result = "false";
+    }
+    alert(result);
+  }
+
+  check2();
+</script>
+</body>
+</html>

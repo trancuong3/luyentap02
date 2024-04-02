@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>b3</title>
+</head>
+<body>
+<script>
+  function factorial(x) {
+    if (x === 0 || x === 1) {
+      return 1;
+    } else {
+      return x * factorial(x - 1);
+    }
+  }
+  let x=parseInt(prompt("nhập số "));
+
+  alert(factorial(x));
+
+</script>
+</body>
+</html>

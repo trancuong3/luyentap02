@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b7</title>
+</head>
+<body>
+<script>
+    function swap(a,b)
+    {
+
+       let temp=a;
+        a=b;
+        b=temp;
+      return [a,b];
+    }
+    let a=parseInt(prompt("nhập a"));
+    let b=parseInt(prompt("nhập b"));
+    [a, b] = swap(a, b);
+    alert(a + " " + b);
+
+
+</script>
+</body>
+</html>

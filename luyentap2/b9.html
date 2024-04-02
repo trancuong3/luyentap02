@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b9</title>
+</head>
+<body>
+<script>
+    function check()
+    {
+        let count = 0;
+        let a = [];
+        let n = parseInt(prompt("Nhập số lượng ký tự: "));
+        for (let i = 0; i < n; i++)
+        {
+            let b = prompt("Nhập ký tự thứ " + (i + 1) + ": ");
+            a.push(b);
+        }
+        let c = prompt("Nhập ký tự cần kiểm tra: ");
+        for (let j = 0; j < a.length; j++)
+        {
+            if (c === a[j])
+            {
+                count++;
+            }
+        }
+        if (count === 0)
+        {
+            count = -1;
+        }
+        alert("Số lần xuất hiện của ký tự " + c + " trong mảng là: " + count);
+    }
+    check();
+</script>
+</body>
+</html>

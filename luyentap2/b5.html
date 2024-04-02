@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>b5</title>
+    </head>
+    <body>
+    <script>
+        function min(a,b,c)
+        {
+            let min = a;
+
+            if (b < min) {
+                min = b;
+            }
+
+            if (c < min) {
+                min = c;
+            }
+
+            return "số nhỏ nhất là "+ min;
+        }
+
+        let x=parseInt(prompt("nhập số"));
+        let y=parseInt(prompt("nhập số"));
+        let z=parseInt(prompt("nhập số"));
+        alert(min(x,y,z));
+    </script>
+    </body>
+    </html>

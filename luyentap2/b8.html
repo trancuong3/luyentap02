@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b8</title>
+</head>
+<body>
+<script>
+
+    function swap()
+    {
+        let a=[];
+
+        let n = parseInt(prompt("Nhập số lượng phần tử của mảng: "));
+        for(let i = 0; i < n; i++) {
+            let b = parseInt(prompt("Nhập số thứ " + (i + 1) + ": "));
+            a.push(b);
+        }
+        for(let i=0;i<a.length/2; i++)
+        {
+            let temp=a[i]
+            a[i]=a[a.length-i-1];
+            a[a.length-i-1]=temp;
+
+        }
+        return a;
+    }
+    alert(swap());
+</script>
+</body>
+</html>
